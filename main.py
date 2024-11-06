@@ -2,7 +2,19 @@
 
 
 # meminta input panjang dan lebar dari pengguna 
+def input_posotif(prompt):
+    while true:
+        try:
+            nilai = float(input(prompt))
+            if nilai > 0 :
+                return nilai 
+            else:
+                print("nilai harus lebih dari 0. coba lagi.")
+        except valueerror:
+            print("input tidak valid. masukan angka.")
+            
 
+                 
 panjang=float(input("masukan panjang "))
 lebar=float(input("masukan lebar"))
 
